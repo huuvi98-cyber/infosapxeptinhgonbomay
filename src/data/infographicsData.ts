@@ -5,7 +5,7 @@ export const REFORM_2026_DATA: InfographicData = {
   title: 'BÁO CÁO TỔNG HỢP CẢI CÁCH BỘ MÁY & PHÁT TRIỂN 2026',
   subtitle: 'Trực quan hóa thành tựu tinh giản bộ máy, cải cách thủ tục hành chính & ngân sách hỗ trợ giáo dục',
   updatedAt: 'Tháng 10/2026',
-  sourceNotes: 'Tổng hợp từ các nguồn: Báo cáo chính trị của Ban Chấp hành Đảng bộ Chính phủ nhiệm kỳ 2020 - 2025 tại Đại hội Đại biểu Đảng bộ Chính phủ lần thứ nhất, nhiệm kỳ 2025 - 2030; Báo cáo của Bộ GD-ĐT; Báo cáo kinh tế - xã hội do Thủ tướng trình bày tại Kỳ họp thứ 2, Quốc hội khóa XVI.',
+  sourceNotes: 'Tổng hợp từ các nguồn: Báo cáo chính trị của Ban Chấp hành Đảng bộ Chính phủ nhiệm kỳ 2020 - 2025 tại Đại hội Đại biểu Đảng bộ Chính phủ lần thứ nhất, nhiệm kỳ 2025 - 2030; Báo cáo của Bộ GD-ĐT; Báo cáo kinh tế - xã hội do Thủ tướng Lê Minh Hưng trình bày tại Kỳ họp thứ 2, Quốc hội khóa XVI',
   sections: [
     {
       id: 'section-apparatus',
