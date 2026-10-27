@@ -9,7 +9,7 @@ interface InfographicCardProps {
   speedMultiplier: number;
   isMuted: boolean;
   isDarkMode: boolean;
-  onOpenDetail: (item: InfographicItem) => void;
+  onOpenDetail?: (item: InfographicItem) => void;
 }
 
 export const InfographicCard: React.FC<InfographicCardProps> = ({
@@ -18,15 +18,13 @@ export const InfographicCard: React.FC<InfographicCardProps> = ({
   speedMultiplier,
   isMuted,
   isDarkMode,
-  onOpenDetail,
 }) => {
   return (
     <div
-      onClick={() => onOpenDetail(item)}
-      className={`group relative p-5 rounded-2xl border transition-all duration-300 cursor-pointer shadow-xs hover:shadow-md ${
+      className={`group relative p-5 rounded-2xl border transition-all duration-300 shadow-xs ${
         isDarkMode
-          ? 'bg-slate-800/80 border-slate-700 hover:border-sky-500/50'
-          : 'bg-white border-slate-200/90 hover:border-sky-400'
+          ? 'bg-slate-800/80 border-slate-700'
+          : 'bg-white border-slate-200/90'
       }`}
     >
       <div className="flex flex-col sm:flex-row items-center gap-4">

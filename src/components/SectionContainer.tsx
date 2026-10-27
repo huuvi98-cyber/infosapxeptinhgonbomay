@@ -8,7 +8,7 @@ interface SectionContainerProps {
   speedMultiplier: number;
   isMuted: boolean;
   isDarkMode: boolean;
-  onOpenDetail: (item: any) => void;
+  onOpenDetail?: (item: any) => void;
 }
 
 export const SectionContainer: React.FC<SectionContainerProps> = ({
@@ -46,7 +46,6 @@ export const SectionContainer: React.FC<SectionContainerProps> = ({
                 speedMultiplier={speedMultiplier}
                 isMuted={isMuted}
                 isDarkMode={isDarkMode}
-                onOpenDetail={onOpenDetail}
               />
             </div>
           ))}

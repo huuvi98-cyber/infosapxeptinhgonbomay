@@ -43,10 +43,10 @@ export default function App() {
       isDarkMode ? 'bg-slate-950 text-slate-100' : 'bg-[#fffdf0] text-slate-800'
     }`}>
       
-      {/* Pure Infographic Canvas (containing ONLY the 3 main section boxes) */}
-      <main onClick={handleReplayAll} className="max-w-6xl mx-auto space-y-6 cursor-pointer" title="Nhấp vào màn hình để phát lại hiệu ứng nhảy số">
+      {/* Pure Infographic Canvas (containing ONLY the 2 main section boxes) */}
+      <main className="max-w-6xl mx-auto space-y-6">
         
-        {/* Render the 3 Main Infographic Boxes */}
+        {/* Render the 2 Main Infographic Boxes */}
         {data.sections.map((section) => (
           <SectionContainer
             key={section.id}
@@ -55,7 +55,6 @@ export default function App() {
             speedMultiplier={1}
             isMuted={isMuted}
             isDarkMode={isDarkMode}
-            onOpenDetail={(item) => setSelectedItem(item)}
           />
         ))}
 
