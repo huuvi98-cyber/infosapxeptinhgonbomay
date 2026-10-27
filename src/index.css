@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Be Vietnam Pro', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #fffdf0; /* Warm yellow/cream poster paper background */
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.font-display, .font-serif {
+  font-family: 'Be Vietnam Pro', system-ui, -apple-system, sans-serif;
+}
+
+/* Sharp high-contrast numbers for maximum legibility */
+.number-sharp {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.dashed-border-blue {
+  border: 2.5px dashed #0284c7;
+}
+
+.dashed-border-stone {
+  border: 2px dashed #64748b;
+}
+
+/* Custom sound wave pulse */
+@keyframes soundPulse {
+  0%, 100% { height: 4px; }
+  50% { height: 16px; }
+}
+
+.animate-sound-1 { animation: soundPulse 0.6s ease-in-out infinite; }
+.animate-sound-2 { animation: soundPulse 0.6s ease-in-out infinite 0.2s; }
+.animate-sound-3 { animation: soundPulse 0.6s ease-in-out infinite 0.4s; }
+
+/* Subtle card hover highlight */
+.card-hover-ring {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-ring:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Infographic Động - Nhảy Số Cải Cách & Phát Triển",
+  "description": "Trực quan hóa Infographic tương tác với hiệu ứng nhảy số tự động, công cụ tính toán tác động và Trợ lý AI tạo Infographic từ báo cáo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
